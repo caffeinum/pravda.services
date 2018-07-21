@@ -1,0 +1,26 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: space-around;
+}
+
+.width {
+  width: 800px;
+  margin-right: 100px;
+
+  & h2 {
+    font-size: 28px;
+    line-height: 48px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.button {
+  margin-top: 40px;
+}

@@ -1,0 +1,41 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: space-around;
+}
+
+.width {
+  width: 800px;
+  margin-right: 100px;
+
+  & h2 {
+    font-size: 28px;
+    line-height: 48px;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.button {
+  margin-top: 40px;
+}
+
+.block {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 15px 25px;
+  width: 300px;
+  border-radius: 10px;
+  background: rgba(90,26,110, 0.4);
+
+  & img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+  }
+}
