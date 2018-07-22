@@ -37,10 +37,10 @@ export default class Login extends Component {
 
   handleLogin = () => {
     const { view } = this.state
-    const { next } = this.props
+    const { nextStep } = this.props
 
     if (!view) {
-      next()
+      nextStep()
     }
 
   }
@@ -55,7 +55,6 @@ export default class Login extends Component {
 
   render() {
     const { name, password, isSubmitted, view } = this.state
-    const { steps } = this.props
     const linked = Link.all(this, 'name', 'password')
 
     if (isSubmitted) {

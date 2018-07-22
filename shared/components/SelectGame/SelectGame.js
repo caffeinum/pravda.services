@@ -22,7 +22,7 @@ export default class SelectGame extends Component {
     await actions.pravda.getTokenBalance()
     await actions.pravda.getItemsBalance()
     actions.loader.hide()
-    this.props.handleNextStep()
+    this.props.nextStep()
   }
 
   render() {

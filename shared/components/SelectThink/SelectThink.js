@@ -33,8 +33,8 @@ export default class SelectThink extends Component {
   }
 
   handleNextStep = () => {
-    const { next } = this.props
-    next()
+    const { nextStep } = this.props
+    nextStep()
   }
 
   render() {

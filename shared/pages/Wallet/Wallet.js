@@ -52,9 +52,10 @@ export default class Wallet extends Component {
         <div styleName="row">
           <div styleName="col">
             <div styleName="title">3 steps to work with us:</div>
-            <p styleName="text">Deploy our contracts</p>
-            <p styleName="text">Tokenize your assets</p>
-            <p styleName="text">Get commission on each transaction</p>
+            <p styleName="text">
+              Deploy our contracts <br />
+              Tokenize your assets <br />
+              Get commission on each transaction </p>
             <Link to="/history">
               <Button styleName="button" green >Go to the Wallet</Button>
             </Link>

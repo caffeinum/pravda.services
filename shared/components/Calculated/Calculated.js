@@ -41,7 +41,7 @@ export default class Calculated extends Component {
   }
 
   valueCreator = () => {
-    let { amount, week } = this.state
+    let { amount } = this.state
 
     amount = this.rangeInput.value
 
@@ -51,9 +51,9 @@ export default class Calculated extends Component {
   }
 
   handleSellItem = () => {
-    const { next } = this.props
+    const { nextStep } = this.props
     actions.pravda.initiatePawnTransaction()
-    next()
+    nextStep()
   }
 
 

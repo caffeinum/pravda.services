@@ -30,23 +30,23 @@ export default class History extends Component {
   }
 
   handleNextStep = () => {
-    let { step } = this.state
-    step += 1
+    const { step } = this.state
+    const newStep = step + 1
+
     this.setState({
-      step,
+      step: newStep,
     })
   }
 
   handleBackStep = () => {
-    let { step } = this.state
+    const { step } = this.state
+    const newStap = step - 1
 
-    if (step > 1) {
-      step -= 1
+    if (newStap > 0) {
+      this.setState({
+        step: newStap,
+      })
     }
-
-    this.setState({
-      step,
-    })
   }
 
 
@@ -64,17 +64,27 @@ export default class History extends Component {
           <div styleName="row">
             <Button green onClick={this.handleBackStep}>Back</Button>
             <div>
-              <p styleName="text">Address: { !address ? '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' : address }</p>
-              <p styleName="text">PrivateKey: { !privateKey ? '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' : privateKey }</p>
+              <p styleName="text">Address: {address}</p>
+              <p styleName="text">PrivateKey: {privateKey}</p>
               <p styleName="text">Balance: {balance}</p>
             </div>
           </div>
         </PageHeadline>
-        { step === 1 && <Login reg next={this.handleNextStep} steps={step} /> }
-        { step === 2 && <SelectGame handleNextStep={this.handleNextStep} steps={step} /> }
-        { step === 3 && <SelectThink next={this.handleNextStep} steps={step} /> }
-        { step === 4 && <Calculated next={this.handleNextStep} steps={step} /> }
-        { step === 5 && <h1>Thank you. Your coins have been sent.</h1> }
+        {
+          step === 1 ? (
+            <Login nextStep={this.handleNextStep} />
+          ) : (
+            step === 2 ? (
+              <SelectGame nextStep={this.handleNextStep} />
+            ) : step === 3 ? (
+              <SelectThink nextStep={this.handleNextStep} />
+            ) : step === 4 ? (
+              <Calculated nextStep={this.handleNextStep} />
+            ) : (
+              <h1>Thank you. Your coins have been sent.</h1>
+            )
+          )
+        }
       </section>
     )
   }
