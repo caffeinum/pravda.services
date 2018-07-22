@@ -6541,7 +6541,9 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
     }, _this.handleNextStep = function () {
       var step = _this.state.step;
 
+      console.log(step);
       step += 1;
+      console.log(step);
       _this.setState({
         step: step
       });
@@ -6614,7 +6616,7 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
           )
         ),
         step === 1 && _react2.default.createElement(_forms.Login, { reg: true, next: this.handleNextStep }),
-        step === 2 && _react2.default.createElement(_SelectGame2.default, { next: this.handleNextStep }),
+        step === 2 && _react2.default.createElement(_SelectGame2.default, { handleNextStep: this.handleNextStep }),
         step === 3 && _react2.default.createElement(_SelectThink2.default, { next: this.handleNextStep }),
         step === 4 && _react2.default.createElement(_Calculated2.default, { next: this.handleNextStep }),
         step === 5 && _react2.default.createElement(
@@ -7815,41 +7817,36 @@ var SelectGame = (_dec = (0, _reactCssModules2.default)(_SelectGame2.default), _
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = SelectGame.__proto__ || (0, _getPrototypeOf2.default)(SelectGame)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      games: null
-    }, _this.handleNext = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
-      var next;
+    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = SelectGame.__proto__ || (0, _getPrototypeOf2.default)(SelectGame)).call.apply(_ref, [this].concat(args))), _this), _this.handleNext = (0, _asyncToGenerator3.default)( /*#__PURE__*/_regenerator2.default.mark(function _callee() {
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              next = _this.props.next;
-
               _actions2.default.loader.show(true);
-              _context.next = 4;
+              _context.next = 3;
               return _actions2.default.pravda.getCoins();
 
-            case 4:
-              _context.next = 6;
+            case 3:
+              _context.next = 5;
               return _actions2.default.pravda.getGameItems();
 
-            case 6:
-              _context.next = 8;
+            case 5:
+              _context.next = 7;
               return _actions2.default.pravda.getBalance();
 
-            case 8:
-              _context.next = 10;
+            case 7:
+              _context.next = 9;
               return _actions2.default.pravda.getTokenBalance();
 
-            case 10:
-              _context.next = 12;
+            case 9:
+              _context.next = 11;
               return _actions2.default.pravda.getItemsBalance();
 
-            case 12:
+            case 11:
               _actions2.default.loader.hide();
-              next();
+              _this.props.handleNextStep();
 
-            case 14:
+            case 13:
             case 'end':
               return _context.stop();
           }
