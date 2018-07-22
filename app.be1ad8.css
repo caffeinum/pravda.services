@@ -130,6 +130,7 @@
 
 ._1WzQpi {
   background-color: #dbdbdb !important;
+  border: solid 1px #dbdbdb !important;
   cursor: default !important;
   color: #626262 !important; }
 .IcXJ3B {
@@ -142,6 +143,13 @@
   font-size: 28px;
   border-radius: 50%;
   background: rgba(61, 226, 91, 0.4);
+  margin-top: 20px; }
+
+.M2kEUN {
+  font-size: 13px;
+  margin: 0; }
+
+._1J4HTF {
   margin-top: 20px; }
 ._1uYyjR {
   width: 45px;
@@ -1597,6 +1605,10 @@ input[type=number]::-webkit-outer-spin-button {
   line-height: 280px;
   color: #fff;
   font-size: 36px; }
+
+._3R69kO {
+  background: #c0c0c0;
+  cursor: default; }
 
 ._153K8d {
   display: -webkit-box;
