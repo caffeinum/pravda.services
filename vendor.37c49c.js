@@ -91,7 +91,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + "cae303" + ".chunk.js";
+/******/ 		script.src = __webpack_require__.p + "" + chunkId + "." + "37c49c" + ".chunk.js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -54380,7 +54380,7 @@ var debugs = {};
 var debugEnviron;
 exports.debuglog = function(set) {
   if (isUndefined(debugEnviron))
-    debugEnviron = Object({"NODE_ENV":"production","ENTRY":"testnet","TESTNET":true,"MAINNET":false}).NODE_DEBUG || '';
+    debugEnviron = Object({"NODE_ENV":"production","ENTRY":"mainnet","TESTNET":false,"MAINNET":true}).NODE_DEBUG || '';
   set = set.toUpperCase();
   if (!debugs[set]) {
     if (new RegExp('\\b' + set + '\\b', 'i').test(debugEnviron)) {

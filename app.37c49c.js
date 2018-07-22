@@ -220,7 +220,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 // resolve object in webpack
-exports.default = {"propENV":"testnet.prod","paths":{},"referral":{"url":"https://wiki.swap.online/affiliate.php"},"publicPath":"https://pravda.services/","http":{"host":"localhost","port":9001},"i18nDate":{"month":"long","day":"numeric","hour":"numeric","minute":"numeric"},"exchangeRates":{"swapeth":1,"ethswap":1,"swapnoxon":1,"noxonswap":1,"swapbtc":0.07,"btcswap":14,"etheth":1,"ethbtc":0.07,"btceth":14,"ethnoxon":1,"noxoneth":1,"btcnoxon":14,"noxonbtc":0.07},"env":"production","entry":"testnet","base":"https://pravda.services/","services":{"web3":{"provider":"https://rinkeby.infura.io/JCnK5ifEPH9qcQkX0Ahl","rate":0.1,"gas":2000000,"gasPrice":"20000000000"},"eos":{"chainId":"038f4b0fc8ff18a4f0842a8f0564611f6e96e8535901dd45e43ac8691a1c4dca","httpEndpoint":"https://jungle.eosio.cr"}},"token":{"contract":"0xc87C2668F05803F60EF75b176eea0CCE80D0009C"},"eth":{"contract":"0x830aef165b900fa7dc6b219f062c5784f6436d67"},"tokens":{"swap":{"address":"0xbaa3fa2ed111f3e8488c21861ea7b7dbb5a7b121","decimals":18},"noxon":{"address":"0x60c205722c6c797c725a996cf9cca11291f90749","decimals":0},"jot":{"address":"0x9070e2fDb61887c234D841c95D1709288EBbB9a0","decimals":18}},"link":{"bitpay":"https://test-insight.bitpay.com","etherscan":"https://rinkeby.etherscan.io","eos":"http://jungle.cryptolions.io/#accountInfo"},"api":{"blocktrail":"https://api.blocktrail.com/v1/tBTC","bitpay":"https://test-insight.bitpay.com/api","etherscan":"https://rinkeby.etherscan.io/api","pravda":"https://y000r.world"},"apiKeys":{"etherscan":"RHHFPNMAZMD6I4ZWBZBF6FA11CMW9AXZNM","blocktrail":"1835368c0fa8e71907ca26f3c978ab742a7db42e"}};
+exports.default = {"propENV":"mainnet.prod","paths":{},"referral":{"url":"https://wiki.swap.online/affiliate.php"},"publicPath":"https://pravda.services/","http":{"host":"localhost","port":9001},"i18nDate":{"month":"long","day":"numeric","hour":"numeric","minute":"numeric"},"exchangeRates":{"swapeth":1,"ethswap":1,"swapnoxon":1,"noxonswap":1,"swapbtc":0.07,"btcswap":14,"etheth":1,"ethbtc":0.07,"btceth":14,"ethnoxon":1,"noxoneth":1,"btcnoxon":14,"noxonbtc":0.07},"env":"production","entry":"mainnet","base":"https://pravda.services/","services":{"web3":{"provider":"https://mainnet.infura.io/5lcMmHUURYg8F20GLGSr","rate":0.1,"gas":100000,"gasPrice":"20000000000"},"eos":{"chainId":"","httpEndpoint":""}},"token":{"contract":"0x8D880dff55a0c5620Cc617B0a34c83B87946783c"},"eth":{"contract":"0x025dce2d39a46296766db7cac8c322e8f59cd5d9"},"tokens":{"swap":{"address":"0x14a52cf6B4F68431bd5D9524E4fcD6F41ce4ADe9","decimals":18},"noxon":{"address":"0x9E4AD79049282F942c1b4c9b418F0357A0637017","decimals":0},"jot":{"address":"0xdb455c71c1bc2de4e80ca451184041ef32054001","decimals":18}},"link":{"bitpay":"https://insight.bitpay.com","etherscan":"https://etherscan.io","eos":""},"api":{"blocktrail":"https://api.blocktrail.com/v1/BTC","bitpay":"https://insight.bitpay.com/api","etherscan":"https://api.etherscan.io/api"},"apiKeys":{"etherscan":"RHHFPNMAZMD6I4ZWBZBF6FA11CMW9AXZNM","blocktrail":"1835368c0fa8e71907ca26f3c978ab742a7db42e"}};
 
 /***/ }),
 /* 41 */,
@@ -2910,7 +2910,7 @@ var _bitcoinjsLib2 = _interopRequireDefault(_bitcoinjsLib);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var network =  false ? _bitcoinjsLib2.default.networks.bitcoin : _bitcoinjsLib2.default.networks.testnet;
+var network =  true ? _bitcoinjsLib2.default.networks.bitcoin : _bitcoinjsLib2.default.networks.testnet;
 
 exports.default = {
   network: network
@@ -3343,12 +3343,12 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  eth: "testnet" + ":eth:privateKey",
-  pravdaKey: "testnet" + ":pravda:privateKey",
-  pravdaAddress: "testnet" + ":pravda:address",
-  btc: "testnet" + ":btc:privateKey",
-  eos: "testnet" + ":eos:privateKey",
-  eosAccount: "testnet" + ":eos:account"
+  eth: "mainnet" + ":eth:privateKey",
+  pravdaKey: "mainnet" + ":pravda:privateKey",
+  pravdaAddress: "mainnet" + ":pravda:address",
+  btc: "mainnet" + ":btc:privateKey",
+  eos: "mainnet" + ":eos:privateKey",
+  eosAccount: "mainnet" + ":eos:account"
 };
 
 /***/ }),
@@ -4682,7 +4682,7 @@ var getBalances = function getBalances() {
   // actions.nimiq.getBalance()
 };
 
-var getDemoMoney =  false ? function () {} : function () {
+var getDemoMoney =  true ? function () {} : function () {
   _helpers.request.get('https://swap.wpmix.net/demokeys.php', {}).then(function (r) {
     window.localStorage.clear();
     localStorage.setItem(_helpers.constants.privateKeyNames.btc, r[0]);
@@ -6571,6 +6571,8 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
       var step = this.state.step;
 
 
+      console.log('step', step);
+
       return _react2.default.createElement(
         'section',
         null,
@@ -6615,11 +6617,11 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
             )
           )
         ),
-        step == 1 && _react2.default.createElement(_forms.Login, { reg: true, next: this.handleNextStep }),
-        step == 2 && _react2.default.createElement(_SelectGame2.default, { handleNextStep: this.handleNextStep }),
-        step == 3 && _react2.default.createElement(_SelectThink2.default, { next: this.handleNextStep }),
-        step == 4 && _react2.default.createElement(_Calculated2.default, { next: this.handleNextStep }),
-        step == 5 && _react2.default.createElement(
+        step === 1 && _react2.default.createElement(_forms.Login, { reg: true, next: this.handleNextStep }),
+        step === 2 && _react2.default.createElement(_SelectGame2.default, { handleNextStep: this.handleNextStep }),
+        step === 3 && _react2.default.createElement(_SelectThink2.default, { next: this.handleNextStep }),
+        step === 4 && _react2.default.createElement(_Calculated2.default, { next: this.handleNextStep }),
+        step === 5 && _react2.default.createElement(
           'h1',
           null,
           'Thank you. Your coins have been sent.'
@@ -9300,7 +9302,7 @@ var ConfirmOffer = (_dec = (0, _reactCssModules2.default)(_ConfirmOffer2.default
 
       this.setState({ sellAmount: sellAmount, buyAmount: buyAmount, buyCurrency: buyCurrency, sellCurrency: sellCurrency, exchangeRate: exchangeRate });
 
-      if (false) {
+      if (true) {
         if (sellCurrency === 'eth' && sellAmount > 0.1) {
           this.setState({
             sellAmount: 0.1,
