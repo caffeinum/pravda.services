@@ -6541,9 +6541,7 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
     }, _this.handleNextStep = function () {
       var step = _this.state.step;
 
-      console.log(step);
       step += 1;
-      console.log(step);
       _this.setState({
         step: step
       });
@@ -6562,16 +6560,6 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
   }
 
   (0, _createClass3.default)(History, [{
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      var step = this.state.step;
-
-
-      if (nextProps.step > step) {
-        this.render();
-      }
-    }
-  }, {
     key: 'render',
     value: function render() {
       var _props = this.props,
@@ -7162,7 +7150,7 @@ var Steps = (_dec = (0, _reactCssModules2.default)(_Steps2.default, { allowMulti
     }
 
     return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Steps.__proto__ || (0, _getPrototypeOf2.default)(Steps)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-      step: 1
+      step: _this.props.steps
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
