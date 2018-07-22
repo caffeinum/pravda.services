@@ -1,0 +1,23 @@
+.services {
+  height: 300px;
+  border-radius: 20px;
+  width: 400px;
+  cursor: pointer;
+  background: -webkit-linear-gradient(left, #510ed8 0%, #510ed8 70%, #8821ee 100%);
+  background-size: contain;
+  line-height: 280px;
+  color: #fff;
+  font-size: 36px;
+}
+
+.disabled {
+  background: #c0c0c0;
+  cursor: default;
+}
+
+.content {
+  display: flex;
+  width: 1100px;
+  text-align: center;
+  justify-content: space-around;
+}

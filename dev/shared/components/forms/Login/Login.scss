@@ -1,0 +1,16 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: space-around;
+}
+
+.note {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.button {
+  margin-top: 40px;
+}

@@ -1,0 +1,17 @@
+.game {
+  max-height: 300px;
+  max-width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

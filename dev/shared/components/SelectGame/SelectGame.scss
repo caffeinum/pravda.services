@@ -1,0 +1,28 @@
+.game {
+  max-height: 300px;
+  max-width: 300px;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  display: flex;
+  height: 300px;
+}
