@@ -6596,7 +6596,7 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
           _react2.default.createElement(
             'div',
             { styleName: 'row' },
-            step > 1 && _react2.default.createElement(
+            _react2.default.createElement(
               _controls.Button,
               { green: true, onClick: this.handleBackStep },
               'Back'
@@ -6616,7 +6616,7 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
                 'PrivateKey: ',
                 !privateKey ? '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' : privateKey
               ),
-              step === 3 && _react2.default.createElement(
+              _react2.default.createElement(
                 'p',
                 { styleName: 'text' },
                 'Balance: ',
