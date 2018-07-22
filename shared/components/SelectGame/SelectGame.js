@@ -13,15 +13,14 @@ export default class SelectGame extends Component {
   }
 
   render() {
+    const { next } = this.props
     const games = ['1', '2', '3' ]
 
     return (
       <div styleName="row">
         {
           games.map((game, index) => (
-            <Link to={game}>
-              <div styleName="game" key={index} />
-            </Link>
+            <div styleName="game" key={index} onClick={next} />
           ))
         }
       </div>

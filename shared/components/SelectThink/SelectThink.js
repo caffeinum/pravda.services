@@ -13,13 +13,14 @@ export default class SelectThink extends Component {
   }
 
   render() {
+    const { next } = this.props
     const think = ['1', '2', '3' ]
 
     return (
       <div styleName="row">
         {
           think.map((game, index) => (
-            <div styleName="game" key={index} />
+            <div styleName="game" key={index} onClick={next} />
           ))
         }
       </div>

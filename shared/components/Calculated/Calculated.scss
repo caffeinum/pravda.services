@@ -1,0 +1,37 @@
+.row {
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.checkbox {
+  margin-bottom: 10px;
+  margin-right: 5px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  border: 1px solid #fc706f;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.checked {
+  border: 1px solid #3de25b;
+  padding: 10px 10px 10px 35px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: calc(50% - 7.5px);
+    left: 12px;
+    background: url('./images/accept.svg') 50% 50% no-repeat;
+  }
+}
+
+.button {
+  margin-top: 20px;
+}

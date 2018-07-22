@@ -26,7 +26,7 @@ export default class Offer extends React.Component {
     setTimeout(() => {
       actions.loader.hide()
       actions.modals.close(constants.modals.Approve, {})
-    }, 0)
+    }, 1500)
 
   }
 

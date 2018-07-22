@@ -15,11 +15,9 @@ import Button from 'components/controls/Button/Button'
 @CSSModules(styles)
 export default class Wallet extends Component {
 
-  state = {
-    view: 'off',
-  }
 
   render() {
+    const titles = ['Save & Secured', 'Instant Exchange', 'One Click Application', 'Payment Gateway']
 
     return (
       <section>
@@ -36,27 +34,15 @@ export default class Wallet extends Component {
               mollitia nemo non nostrum praesentium quos tempora vitae, voluptate.</p>
             <Button styleName="button" brand>Login on board</Button>
           </div>
-          <div styleName="col">
-            <div styleName="block">
-              <img src={Icon} alt="" />
-              Save & Secured
-            </div>
-            <div styleName="block">
-              <img src={Icon} alt="" />
-              Instant Exchange
-            </div>
-            <div styleName="block">
-              <img src={Icon} alt="" />
-              Internal & External Integration
-            </div>
-            <div styleName="block">
-              <img src={Icon} alt="" />
-              One Click Application
-            </div>
-            <div styleName="block">
-              <img src={Icon} alt="" />
-              Payment Gateway
-            </div>
+          <div>
+            {
+              titles.map((title, index) => (
+                <div styleName="block" key={index}>
+                  <img src={Icon} alt="" />
+                  {title}
+                </div>
+              ))
+            }
           </div>
         </div>
       </section>
