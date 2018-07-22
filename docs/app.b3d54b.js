@@ -2253,17 +2253,11 @@ var Wallet = (_dec = (0, _reactCssModules2.default)(_Wallet2.default), _dec(_cla
             _react2.default.createElement(
               'p',
               { styleName: 'text' },
-              'Deploy our contracts'
-            ),
-            _react2.default.createElement(
-              'p',
-              { styleName: 'text' },
-              'Tokenize your assets'
-            ),
-            _react2.default.createElement(
-              'p',
-              { styleName: 'text' },
-              'Get commission on each transaction'
+              'Deploy our contracts ',
+              _react2.default.createElement('br', null),
+              'Tokenize your assets ',
+              _react2.default.createElement('br', null),
+              'Get commission on each transaction '
             ),
             _react2.default.createElement(
               _reactRouterDom.Link,
@@ -2987,21 +2981,21 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
     }, _this.handleNextStep = function () {
       var step = _this.state.step;
 
-      step += 1;
+      var newStep = step + 1;
+
       _this.setState({
-        step: step
+        step: newStep
       });
     }, _this.handleBackStep = function () {
       var step = _this.state.step;
 
+      var newStap = step - 1;
 
-      if (step > 1) {
-        step -= 1;
+      if (newStap > 0) {
+        _this.setState({
+          step: newStap
+        });
       }
-
-      _this.setState({
-        step: step
-      });
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
@@ -3042,13 +3036,13 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
                 'p',
                 { styleName: 'text' },
                 'Address: ',
-                !address ? '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' : address
+                address
               ),
               _react2.default.createElement(
                 'p',
                 { styleName: 'text' },
                 'PrivateKey: ',
-                !privateKey ? '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' : privateKey
+                privateKey
               ),
               _react2.default.createElement(
                 'p',
@@ -3059,11 +3053,7 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
             )
           )
         ),
-        step === 1 && _react2.default.createElement(_forms.Login, { reg: true, next: this.handleNextStep, steps: step }),
-        step === 2 && _react2.default.createElement(_SelectGame2.default, { handleNextStep: this.handleNextStep, steps: step }),
-        step === 3 && _react2.default.createElement(_SelectThink2.default, { next: this.handleNextStep, steps: step }),
-        step === 4 && _react2.default.createElement(_Calculated2.default, { next: this.handleNextStep, steps: step }),
-        step === 5 && _react2.default.createElement(
+        step === 1 ? _react2.default.createElement(_forms.Login, { nextStep: this.handleNextStep }) : step === 2 ? _react2.default.createElement(_SelectGame2.default, { nextStep: this.handleNextStep }) : step === 3 ? _react2.default.createElement(_SelectThink2.default, { nextStep: this.handleNextStep }) : step === 4 ? _react2.default.createElement(_Calculated2.default, { nextStep: this.handleNextStep }) : _react2.default.createElement(
           'h1',
           null,
           'Thank you. Your coins have been sent.'
@@ -4360,11 +4350,11 @@ var Login = (_dec = (0, _redaction.connect)(function (_ref) {
       view: true
     }, _this.handleLogin = function () {
       var view = _this.state.view;
-      var next = _this.props.next;
+      var nextStep = _this.props.nextStep;
 
 
       if (!view) {
-        next();
+        nextStep();
       }
     }, _this.handleGenerateAccount = function () {
       _actions2.default.pravda.generateAccount();
@@ -4397,7 +4387,6 @@ var Login = (_dec = (0, _redaction.connect)(function (_ref) {
           password = _state.password,
           isSubmitted = _state.isSubmitted,
           view = _state.view;
-      var steps = this.props.steps;
 
       var linked = _swValuelink2.default.all(this, 'name', 'password');
 
@@ -4555,7 +4544,7 @@ var SelectGame = (_dec = (0, _reactCssModules2.default)(_SelectGame2.default), _
 
             case 11:
               _actions2.default.loader.hide();
-              _this.props.handleNextStep();
+              _this.props.nextStep();
 
             case 13:
             case 'end':
@@ -4744,9 +4733,9 @@ var SelectThink = (_dec = (0, _redaction.connect)(function (_ref) {
         message: message
       });
     }, _this.handleNextStep = function () {
-      var next = _this.props.next;
+      var nextStep = _this.props.nextStep;
 
-      next();
+      nextStep();
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
@@ -4927,9 +4916,7 @@ var Calculated = (_dec = (0, _reactCssModules2.default)(_Calculated2.default, { 
         week: value
       });
     }, _this.valueCreator = function () {
-      var _this$state = _this.state,
-          amount = _this$state.amount,
-          week = _this$state.week;
+      var amount = _this.state.amount;
 
 
       amount = _this.rangeInput.value;
@@ -4938,10 +4925,10 @@ var Calculated = (_dec = (0, _reactCssModules2.default)(_Calculated2.default, { 
         amount: amount
       });
     }, _this.handleSellItem = function () {
-      var next = _this.props.next;
+      var nextStep = _this.props.nextStep;
 
       _actions2.default.pravda.initiatePawnTransaction();
-      next();
+      nextStep();
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
