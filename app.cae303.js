@@ -6350,6 +6350,8 @@ var getItemsBalance = function getItemsBalance() {
     if (result.stack !== null) {
       var res = /u?int.*\((\d+)\)/g.exec(result.stack[0]);
       var id = res[1];
+      console.log('BEDA', id);
+
       _reducers2.default.pravda.setItemsId({ id: id });
     }
   });
@@ -6613,11 +6615,11 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
             )
           )
         ),
-        step === 1 && _react2.default.createElement(_forms.Login, { reg: true, next: this.handleNextStep }),
-        step === 2 && _react2.default.createElement(_SelectGame2.default, { handleNextStep: this.handleNextStep }),
-        step === 3 && _react2.default.createElement(_SelectThink2.default, { next: this.handleNextStep }),
-        step === 4 && _react2.default.createElement(_Calculated2.default, { next: this.handleNextStep }),
-        step === 5 && _react2.default.createElement(
+        step == 1 && _react2.default.createElement(_forms.Login, { reg: true, next: this.handleNextStep }),
+        step == 2 && _react2.default.createElement(_SelectGame2.default, { handleNextStep: this.handleNextStep }),
+        step == 3 && _react2.default.createElement(_SelectThink2.default, { next: this.handleNextStep }),
+        step == 4 && _react2.default.createElement(_Calculated2.default, { next: this.handleNextStep }),
+        step == 5 && _react2.default.createElement(
           'h1',
           null,
           'Thank you. Your coins have been sent.'
