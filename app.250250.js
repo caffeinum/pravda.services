@@ -7846,13 +7846,10 @@ var SelectGame = (_dec = (0, _reactCssModules2.default)(_SelectGame2.default), _
               return _actions2.default.pravda.getItemsBalance();
 
             case 12:
-              _context.next = 14;
-              return next();
+              _actions2.default.loader.hide();
+              next();
 
             case 14:
-              _actions2.default.loader.hide();
-
-            case 15:
             case 'end':
               return _context.stop();
           }
@@ -7880,7 +7877,7 @@ var SelectGame = (_dec = (0, _reactCssModules2.default)(_SelectGame2.default), _
         ),
         _react2.default.createElement(
           'div',
-          { styleName: 'game', onClick: this.handleNext },
+          { styleName: 'game' },
           _react2.default.createElement('img', { src: _Artboard2.default, alt: '' }),
           _react2.default.createElement(
             _controls.Button,
@@ -7890,7 +7887,7 @@ var SelectGame = (_dec = (0, _reactCssModules2.default)(_SelectGame2.default), _
         ),
         _react2.default.createElement(
           'div',
-          { styleName: 'game', onClick: this.handleNext },
+          { styleName: 'game' },
           _react2.default.createElement('img', { src: _Ligmar2.default, alt: '' }),
           _react2.default.createElement(
             _controls.Button,
