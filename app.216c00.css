@@ -184,7 +184,7 @@
     height: 20px;
     top: calc(50% - 10px);
     left: calc(50% - 10px);
-    background: url(https://testnet.swap.online/images/accept_cbb01c.svg) 50% 50% no-repeat; }
+    background: url(https://pravda.services/images/accept_cbb01c.svg) 50% 50% no-repeat; }
 
 .sd3WS7 {
   background: #3de25b;
@@ -349,7 +349,7 @@ textarea._3T0zd_ {
   text-align: center; }
   ._2dmdAo::after {
     content: '';
-    background: url(https://testnet.swap.online/images/delete_6ab99e.svg);
+    background: url(https://pravda.services/images/delete_6ab99e.svg);
     background-size: contain;
     position: absolute;
     top: calc(50% - 8px);
@@ -465,7 +465,7 @@ textarea._3T0zd_ {
     height: 15px;
     top: calc(50% - 7.5px);
     left: 12px;
-    background: url(https://testnet.swap.online/images/accept_cbb01c.svg) 50% 50% no-repeat; }
+    background: url(https://pravda.services/images/accept_cbb01c.svg) 50% 50% no-repeat; }
 
 ._3lubUE {
   margin-top: 20px; }
@@ -717,22 +717,22 @@ textarea,
 
 @font-face {
   font-family: 'CerebriSans';
-  src: url(https://testnet.swap.online/fonts/CerebriSans-Regular.eot);
-  src: url(https://testnet.swap.online/fonts/CerebriSans-Regular.eot?#iefix) format("embedded-opentype"), url(https://testnet.swap.online/fonts/CerebriSans-Regular.woff2) format("woff2"), url(https://testnet.swap.online/fonts/CerebriSans-Regular.woff) format("woff"), url(https://testnet.swap.online/fonts/CerebriSans-Regular.ttf) format("truetype");
+  src: url(https://pravda.services/fonts/CerebriSans-Regular.eot);
+  src: url(https://pravda.services/fonts/CerebriSans-Regular.eot?#iefix) format("embedded-opentype"), url(https://pravda.services/fonts/CerebriSans-Regular.woff2) format("woff2"), url(https://pravda.services/fonts/CerebriSans-Regular.woff) format("woff"), url(https://pravda.services/fonts/CerebriSans-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: 'CerebriSans SemiBold';
-  src: url(https://testnet.swap.online/fonts/CerebriSans-SemiBold.eot);
-  src: url(https://testnet.swap.online/fonts/CerebriSans-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://testnet.swap.online/fonts/CerebriSans-SemiBold.woff2) format("woff2"), url(https://testnet.swap.online/fonts/CerebriSans-SemiBold.woff) format("woff"), url(https://testnet.swap.online/fonts/CerebriSans-SemiBold.ttf) format("truetype");
+  src: url(https://pravda.services/fonts/CerebriSans-SemiBold.eot);
+  src: url(https://pravda.services/fonts/CerebriSans-SemiBold.eot?#iefix) format("embedded-opentype"), url(https://pravda.services/fonts/CerebriSans-SemiBold.woff2) format("woff2"), url(https://pravda.services/fonts/CerebriSans-SemiBold.woff) format("woff"), url(https://pravda.services/fonts/CerebriSans-SemiBold.ttf) format("truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'CerebriSans Bold';
-  src: url(https://testnet.swap.online/fonts/CerebriSans-Bold.eot);
-  src: url(https://testnet.swap.online/fonts/CerebriSans-Bold.eot?#iefix) format("embedded-opentype"), url(https://testnet.swap.online/fonts/CerebriSans-Bold.woff2) format("woff2"), url(https://testnet.swap.online/fonts/CerebriSans-Bold.woff) format("woff"), url(https://testnet.swap.online/fonts/CerebriSans-Bold.ttf) format("truetype");
+  src: url(https://pravda.services/fonts/CerebriSans-Bold.eot);
+  src: url(https://pravda.services/fonts/CerebriSans-Bold.eot?#iefix) format("embedded-opentype"), url(https://pravda.services/fonts/CerebriSans-Bold.woff2) format("woff2"), url(https://pravda.services/fonts/CerebriSans-Bold.woff) format("woff"), url(https://pravda.services/fonts/CerebriSans-Bold.ttf) format("truetype");
   font-weight: 600;
   font-style: normal; }
 

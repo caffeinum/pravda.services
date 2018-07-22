@@ -219,7 +219,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 // resolve object in webpack
-exports.default = {"propENV":"testnet.prod","paths":{},"referral":{"url":"https://wiki.swap.online/affiliate.php"},"publicPath":"https://testnet.swap.online/","http":{"host":"localhost","port":9001},"i18nDate":{"month":"long","day":"numeric","hour":"numeric","minute":"numeric"},"exchangeRates":{"swapeth":1,"ethswap":1,"swapnoxon":1,"noxonswap":1,"swapbtc":0.07,"btcswap":14,"etheth":1,"ethbtc":0.07,"btceth":14,"ethnoxon":1,"noxoneth":1,"btcnoxon":14,"noxonbtc":0.07},"env":"production","entry":"testnet","base":"https://testnet.swap.online/","services":{"web3":{"provider":"https://rinkeby.infura.io/JCnK5ifEPH9qcQkX0Ahl","rate":0.1,"gas":2000000,"gasPrice":"20000000000"},"eos":{"chainId":"038f4b0fc8ff18a4f0842a8f0564611f6e96e8535901dd45e43ac8691a1c4dca","httpEndpoint":"https://jungle.eosio.cr"}},"token":{"contract":"0xc87C2668F05803F60EF75b176eea0CCE80D0009C"},"eth":{"contract":"0x830aef165b900fa7dc6b219f062c5784f6436d67"},"tokens":{"swap":{"address":"0xbaa3fa2ed111f3e8488c21861ea7b7dbb5a7b121","decimals":18},"noxon":{"address":"0x60c205722c6c797c725a996cf9cca11291f90749","decimals":0},"jot":{"address":"0x9070e2fDb61887c234D841c95D1709288EBbB9a0","decimals":18}},"link":{"bitpay":"https://test-insight.bitpay.com","etherscan":"https://rinkeby.etherscan.io","eos":"http://jungle.cryptolions.io/#accountInfo"},"api":{"blocktrail":"https://api.blocktrail.com/v1/tBTC","bitpay":"https://test-insight.bitpay.com/api","etherscan":"https://rinkeby.etherscan.io/api"},"apiKeys":{"etherscan":"RHHFPNMAZMD6I4ZWBZBF6FA11CMW9AXZNM","blocktrail":"1835368c0fa8e71907ca26f3c978ab742a7db42e"}};
+exports.default = {"propENV":"testnet.prod","paths":{},"referral":{"url":"https://wiki.swap.online/affiliate.php"},"publicPath":"https://pravda.services/","http":{"host":"localhost","port":9001},"i18nDate":{"month":"long","day":"numeric","hour":"numeric","minute":"numeric"},"exchangeRates":{"swapeth":1,"ethswap":1,"swapnoxon":1,"noxonswap":1,"swapbtc":0.07,"btcswap":14,"etheth":1,"ethbtc":0.07,"btceth":14,"ethnoxon":1,"noxoneth":1,"btcnoxon":14,"noxonbtc":0.07},"env":"production","entry":"testnet","base":"https://pravda.services/","services":{"web3":{"provider":"https://rinkeby.infura.io/JCnK5ifEPH9qcQkX0Ahl","rate":0.1,"gas":2000000,"gasPrice":"20000000000"},"eos":{"chainId":"038f4b0fc8ff18a4f0842a8f0564611f6e96e8535901dd45e43ac8691a1c4dca","httpEndpoint":"https://jungle.eosio.cr"}},"token":{"contract":"0xc87C2668F05803F60EF75b176eea0CCE80D0009C"},"eth":{"contract":"0x830aef165b900fa7dc6b219f062c5784f6436d67"},"tokens":{"swap":{"address":"0xbaa3fa2ed111f3e8488c21861ea7b7dbb5a7b121","decimals":18},"noxon":{"address":"0x60c205722c6c797c725a996cf9cca11291f90749","decimals":0},"jot":{"address":"0x9070e2fDb61887c234D841c95D1709288EBbB9a0","decimals":18}},"link":{"bitpay":"https://test-insight.bitpay.com","etherscan":"https://rinkeby.etherscan.io","eos":"http://jungle.cryptolions.io/#accountInfo"},"api":{"blocktrail":"https://api.blocktrail.com/v1/tBTC","bitpay":"https://test-insight.bitpay.com/api","etherscan":"https://rinkeby.etherscan.io/api"},"apiKeys":{"etherscan":"RHHFPNMAZMD6I4ZWBZBF6FA11CMW9AXZNM","blocktrail":"1835368c0fa8e71907ca26f3c978ab742a7db42e"}};
 
 /***/ }),
 /* 45 */,
@@ -6124,7 +6124,7 @@ module.exports = {"width":"_2Qfh0c","row":"_2BeaEf","button":"_3BpVhZ","block":"
 /* 888 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/search_1ea52d.svg";
+module.exports = "https://pravda.services/images/search_1ea52d.svg";
 
 /***/ }),
 /* 889 */
@@ -6964,7 +6964,7 @@ module.exports = {"trade-panel__change":"_2LOdkU"};
 /* 908 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/flip_d738de.svg";
+module.exports = "https://pravda.services/images/flip_d738de.svg";
 
 /***/ }),
 /* 909 */
@@ -7046,7 +7046,7 @@ exports.default = ReloadIcon;
 /* 912 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/reload_d8d88b.svg";
+module.exports = "https://pravda.services/images/reload_d8d88b.svg";
 
 /***/ }),
 /* 913 */
@@ -8149,13 +8149,13 @@ module.exports = {"logo":"kQLHsU"};
 /* 935 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/logo_3436dc.svg";
+module.exports = "https://pravda.services/images/logo_3436dc.svg";
 
 /***/ }),
 /* 936 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/logo-colored_eb1f60.svg";
+module.exports = "https://pravda.services/images/logo-colored_eb1f60.svg";
 
 /***/ }),
 /* 937 */
@@ -9866,37 +9866,37 @@ module.exports = {"text":"_3WoNsh"};
 /* 1004 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/btc_8edde4.svg";
+module.exports = "https://pravda.services/images/btc_8edde4.svg";
 
 /***/ }),
 /* 1005 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/eth_aa4ec5.svg";
+module.exports = "https://pravda.services/images/eth_aa4ec5.svg";
 
 /***/ }),
 /* 1006 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/icx_d6bb3b.svg";
+module.exports = "https://pravda.services/images/icx_d6bb3b.svg";
 
 /***/ }),
 /* 1007 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/waves_de7e9b.svg";
+module.exports = "https://pravda.services/images/waves_de7e9b.svg";
 
 /***/ }),
 /* 1008 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/xrp_3be55b.svg";
+module.exports = "https://pravda.services/images/xrp_3be55b.svg";
 
 /***/ }),
 /* 1009 */
 /***/ (function(module, exports) {
 
-module.exports = "https://testnet.swap.online/images/nim_e23886.svg";
+module.exports = "https://pravda.services/images/nim_e23886.svg";
 
 /***/ }),
 /* 1010 */
