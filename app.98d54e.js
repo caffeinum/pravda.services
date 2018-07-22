@@ -7846,10 +7846,13 @@ var SelectGame = (_dec = (0, _reactCssModules2.default)(_SelectGame2.default), _
               return _actions2.default.pravda.getItemsBalance();
 
             case 12:
-              _actions2.default.loader.hide();
-              next();
+              _context.next = 14;
+              return next();
 
             case 14:
+              _actions2.default.loader.hide();
+
+            case 15:
             case 'end':
               return _context.stop();
           }
