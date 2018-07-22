@@ -6562,6 +6562,16 @@ var History = (_dec = (0, _redaction.connect)(function (_ref) {
   }
 
   (0, _createClass3.default)(History, [{
+    key: 'componentWillReceiveProps',
+    value: function componentWillReceiveProps(nextProps) {
+      var step = this.state.step;
+
+
+      if (nextProps.step > step) {
+        this.render();
+      }
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _props = this.props,
